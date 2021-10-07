@@ -19,7 +19,26 @@
         <section>
             <form class="top">
                 <h1>Weather App</h1>
+                <label for="">
+                    Location
+                    <input type="text" placeholder="Location" name="search" />
+                </label>
+                <input type="submit" value="Get Weather" />
             </form>
+            <main class="display">
+                <section class="placeholder">
+                    Choose a location to view the weather on location.
+                </section>
+                <div>
+                    <section id="today"></section>
+                    <section id="tomorrow"></section>
+                    <section id="nextday"></section>
+                </div>
+            </main>
+            <aside class="history">
+                <h5>Previous Searches</h5>
+                <p>No previous searches</p>
+            </aside>
             
         </section>
         
