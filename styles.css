@@ -1,8 +1,21 @@
 .top {
-    background-color: teal;
+    background-color: rgb(0, 0, 0);
     border: 3px solid black;
     height: 100px;
     text-align: center;
+}
+
+.top h1 {
+    color: white;
+}
+
+label {
+    color: white;
+    font-family: 'Open Sans', sans-serif;    
+}
+
+#search-tools h2 {
+    color: white;   
 }
 
 header section {
@@ -11,11 +24,11 @@ header section {
 }
 
 form {
-    grid-column: 33%;
+    grid-column: 2/6;
 }
 
 main {
-    grid-column: 40%;
+    grid-column: 2/5;
 }
 
 aside {
@@ -23,11 +36,11 @@ aside {
 }
 
 aside p {
-    text-indent:15%;
+    text-indent:20%;
 }
 
 #today {
-    grid-column: 50%;
+    grid-column: 2/3;
 }
 
 .display {
@@ -36,9 +49,9 @@ aside p {
 }
 
 .placeholder {
-    border: 2px solid cyan;
-    background-color: grey;
-    grid-column: 25%;
+
+    background-image: url(https://res.allmacwallpaper.com/pic/Thumbnails/18983_728.jpg);
+    grid-column: 1/4;
     padding: 25px;
     margin-top: 10px;
     margin-left: 10px;
@@ -46,10 +59,14 @@ aside p {
     display: inline-block;
 }
 
+.mainLoginInput::-webkit-input-placeholder {
+    font-family: 'Open Sans', sans-serif;
+  }
+
 div {
     display: grid;
-    grid-column: 25%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/2;
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 10px;
     margin-left: 10px;
 }
@@ -65,4 +82,33 @@ div section {
 
 .block {
     display: block;
+}
+
+#weather-data-div {
+    border: 3px solid black;
+    border-radius: 15px;
+    grid-column: 1/4;
+    padding: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 10px;
+}
+.asideHeight {
+    height: 235px;
+}
+
+.recent-search-item {
+    display: inline-block;
 }
