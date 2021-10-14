@@ -39,12 +39,6 @@ function getWeather() {
         let mostRecentSearchDiv = document.createElement("div")
         mostRecentSearchDiv.classList.add("recent-search-item")
 
-        // <div>
-        // <div class = "recent-search-item">
-        //<div>Info goes here</div>
-        //</div>
-        //</div>
-
         let recentInfoDiv = document.createElement("div")
         recentInfoDiv.innerHTML = `<p>${area}</p>-</p> ${feels}°F</p>`;
 
@@ -53,7 +47,8 @@ function getWeather() {
         })
         mostRecentSearchDiv.append(recentInfoDiv)
         searchHistory.append(mostRecentSearchDiv)
-        /*getLinks();*/
+        let historyPlaceHolder = document.querySelector("#placeholder-history")
+        historyPlaceHolder.remove("h5")
       })
       .catch(console.log);
     event.target.reset();
