@@ -95,8 +95,6 @@ div section {
     display: inline-block;
 }
 
-
-
 h1, h2, h3, h4, h5, h6 {
 font-family: 'Open Sans', sans-serif;
 }
@@ -114,11 +112,10 @@ p{
 }
 
 body{
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(16,16,227,1) 35%, rgba(0,212,255,1) 100%);
+    background: grey;
 }
 
-#footer{
+footer{
     display: table;
     text-align: center;
     margin-left: auto;
@@ -126,3 +123,12 @@ body{
     width: 100%
 }
 
+.ads {
+    text-align:center;
+    font-family: arial;
+    font-size: 24px;
+    margin: 200px;
+    width: auto;
+    height: auto;
+    outline: solid 1px black;
+  }
